@@ -11,7 +11,9 @@ jobs:
             - name: Get code
               uses: actions/checkout@v3
             - name: check env
-              run: ls -lrt .
+              run: |
+                  ls -lrt .
+                  pwd
             - name: Install Node JS
               uses: actions/setup-node@v3
               with:
